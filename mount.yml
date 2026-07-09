@@ -1,0 +1,7 @@
+---
+ - name: to mount the iso image 
+   hosts: rtr
+   tasks:
+     - name: to mount iso
+       command: "mount /dev/sr0 /mnt"
+...
