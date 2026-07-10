@@ -1,0 +1,7 @@
+---
+ - name: this is the basic playbook
+   hosts: rtr
+   tasks:
+     - name: the basic playbook
+       module:
+...
