@@ -1,0 +1,9 @@
+---
+ - name: to start the service using playbook
+   hosts: rtr
+   tasks:
+     - name: by using the plabook to start the service
+       systemd:
+          name: httpd
+          state: started
+...
