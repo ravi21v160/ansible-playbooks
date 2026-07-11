@@ -1,0 +1,12 @@
+---
+ - name: to get the uptime of the server
+   hosts: rtr
+   tasks:
+     - name: to get the server uptime 
+       shell: uptime
+       register: up
+
+     - name: to get the uptime output of the server
+       debug:
+         var: up.stdout
+...
